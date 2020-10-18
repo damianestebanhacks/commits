@@ -4,6 +4,13 @@
   "main": "index.js",
   "author": "Damian Esteban",
   "license": "MIT",
+  "private": true,
+  "files": [
+    "index.ts",
+    "CHANGELOG.md",
+    "package.json",
+    "yarn.lock"
+  ],
   "scripts": {
     "cz": "yarn run git-cz"
   },
@@ -11,15 +18,21 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/prompt": "^11.0.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.1.1",
+    "@semantic-release/npm": "^7.0.6",
+    "@semantic-release/release-notes-generator": "^9.0.1",
     "commitizen": "^4.2.1",
     "cz-conventional-changelog": "3.3.0",
-    "husky": "^4.3.0"
+    "husky": "^4.3.0",
+    "semantic-release": "^17.2.1"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-
     }
   },
   "config": {
