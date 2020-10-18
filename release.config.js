@@ -11,6 +11,6 @@ module.exports = {
     }],
     "@semantic-release/git"
   ],
-  "preset": "angular"
-  "branches": "master"
+  "preset": "angular",
+  "branches": ["master"]
 }
