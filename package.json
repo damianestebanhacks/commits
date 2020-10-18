@@ -12,7 +12,8 @@
     "yarn.lock"
   ],
   "scripts": {
-    "cz": "yarn run git-cz"
+    "cz": "yarn run git-cz",
+    "test": "jest"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
